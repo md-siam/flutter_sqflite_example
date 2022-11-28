@@ -1,23 +1,13 @@
+import 'dart:developer';
 import 'dart:io';
 import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
+
 import '../database/db_helper.dart';
-
-class ProductModel {
-  final String id;
-  String productName;
-  String productPrice;
-  String productImage;
-
-  ProductModel({
-    required this.id,
-    required this.productName,
-    required this.productPrice,
-    required this.productImage,
-  });
-}
+import '../model/product_model.dart';
 
 class ProductProvider extends ChangeNotifier {
   List<ProductModel> _item = [];
@@ -75,14 +65,16 @@ class ProductProvider extends ChangeNotifier {
     );
     _item.add(newProduct);
 
-  await  DBHelper.insert(DBHelper.product, {
+    log('ProductID: ${newProduct.id}');
+
+    await DBHelper.insert(DBHelper.product, {
       'id': newProduct.id,
       'productName': newProduct.productName,
       'productPrice': newProduct.productPrice,
       'productImage': newProduct.productImage,
     });
 
-  deleteImage();
+    deleteImage();
     notifyListeners();
   }
 
@@ -144,5 +136,4 @@ class ProductProvider extends ChangeNotifier {
     );
     notifyListeners();
   }
-
 }

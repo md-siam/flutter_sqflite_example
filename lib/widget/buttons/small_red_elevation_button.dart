@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import '../responsive/responsive.dart';
-import '../style_color.dart';
 import '../style_color.dart';
 
 class SmallRedElevationButton extends StatelessWidget {

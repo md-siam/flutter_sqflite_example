@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sqflite_example/widget/border.dart';
-import 'package:flutter_sqflite_example/widget/text_form_fileds/text_form_field_name.dart';
+import '../../widget/border.dart';
+import '../../widget/text_form_fileds/text_form_field_name.dart';
 import 'package:provider/provider.dart';
 import '../../../widget/navigator/navigator.dart';
 import '../../provider/product.dart';

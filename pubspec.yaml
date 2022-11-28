@@ -38,12 +38,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  provider: ^6.0.3
+  provider: ^6.0.4
   awesome_dialog: ^3.0.1
-  sqflite: ^2.1.0
+  sqflite: ^2.2.0+3
   mask_text_input_formatter: ^2.0.0
-  image_picker: ^0.8.5+3
-  uuid: ^3.0.6
+  image_picker: ^0.8.6
+  uuid: ^3.0.7
   intl: ^0.17.0
   animate_do: ^2.1.0
 

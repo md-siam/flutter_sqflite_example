@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sqflite_example/widget/responsive/responsive.dart';
-import 'package:flutter_sqflite_example/widget/style_color.dart';
+import 'responsive/responsive.dart';
+import 'style_color.dart';
 
 import 'convert_price_format.dart';
 

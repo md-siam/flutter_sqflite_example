@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:animate_do/animate_do.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_sqflite_example/widget/navigator/navigator.dart';
+import '../../widget/navigator/navigator.dart';
 import 'package:provider/provider.dart';
 import '../../provider/product.dart';
 import '../../widget/alert_dialog/awesome_alert.dart';

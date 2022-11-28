@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sqflite_example/provider/product.dart';
-import 'package:flutter_sqflite_example/screen/product/show_product_screen.dart';
-import 'package:flutter_sqflite_example/widget/style_color.dart';
 import 'package:provider/provider.dart';
+
+import 'provider/product.dart';
+import 'screen/product/show_product_screen.dart';
+import 'widget/style_color.dart';
 void main() {
   runApp(const MyApp());
 }
