@@ -1,15 +1,16 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import '../../widget/border.dart';
-import '../../widget/text_form_fileds/text_form_field_name.dart';
 import 'package:provider/provider.dart';
+
 import '../../../widget/navigator/navigator.dart';
 import '../../provider/product.dart';
 import '../../widget/alert_dialog/awesome_alert.dart';
+import '../../widget/border.dart';
 import '../../widget/buttons/red_elevation_button.dart';
 import '../../widget/responsive/responsive.dart';
 import '../../widget/snack_bar/snack_bar_widget.dart';
 import '../../widget/style_color.dart';
+import '../../widget/text_form_fileds/text_form_field_name.dart';
 import '../../widget/text_form_fileds/text_form_filed_money.dart';
 import 'widget/container_widget.dart';
 
