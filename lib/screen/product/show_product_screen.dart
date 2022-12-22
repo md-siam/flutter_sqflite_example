@@ -61,6 +61,7 @@ class ShowProductScreen extends StatelessWidget {
                     : ListView.builder(
                         scrollDirection: Axis.vertical,
                         itemCount: productProvider.item.length,
+                        physics: const BouncingScrollPhysics(),
                         itemBuilder: (context, index) => Dismissible(
                           key: ValueKey(productProvider.item[index].id),
                           child: MainBody(
@@ -91,7 +92,7 @@ class ShowProductScreen extends StatelessWidget {
                                   id: helperVar.id,
                                   productName: helperVar.productName,
                                   productPrice: helperVar.productPrice,
-                                  productImage:helperVar.productImage,
+                                  productImage: helperVar.productImage,
                                   index: index,
                                 ),
                               );
@@ -195,7 +196,11 @@ class MainBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  getBodyBoldText(context, 'product name: ', helper.productName,),
+                  getBodyBoldText(
+                    context,
+                    'product name: ',
+                    helper.productName,
+                  ),
                   SizedBox(height: height * 0.02),
                   getPriceText(context, 'Price: ', helper.productPrice),
                 ],

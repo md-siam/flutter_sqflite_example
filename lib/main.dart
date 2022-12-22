@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'provider/product.dart';
 import 'screen/product/show_product_screen.dart';
 import 'widget/style_color.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,8 +22,6 @@ class MyApp extends StatelessWidget {
       ],
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-
-
         theme: ThemeData.light().copyWith(
           primaryColor: primaryColor,
           backgroundColor: primaryColor,
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: primaryColor,
           ),
           progressIndicatorTheme:
-          const ProgressIndicatorThemeData(color: primaryColor),
+              const ProgressIndicatorThemeData(color: primaryColor),
           appBarTheme: const AppBarTheme(
             shadowColor: shadowColor,
             backgroundColor: primaryColor,
